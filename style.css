@@ -26,6 +26,9 @@ body{
  
  --ff-primary:"roboto";
 
+
+ --pad-size-200:2rem;
+ --pad-size-400:6rem;
  --pad-size-600:8rem;
  --pad-size-700:9rem;
 
@@ -56,6 +59,8 @@ body{
 
 .bg-neutral{background-color: var(--clr-neutral)}
 
+.pad-size-200{padding: 0 var(--pad-size-200);}
+.pad-size-400{padding: 0 var(--pad-size-400);}
 .pad-size-600{padding: 0 var(--pad-size-600);}
 .pad-size-700{padding: 0 var(--pad-size-700);}
 
@@ -63,6 +68,13 @@ body{
 .pt-small{padding-top: 1rem;}
 .pb-large{padding-bottom: 3rem;}
 .pb-small{padding-bottom: 1rem;}
+
+*{
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+    border-color: var(--clr-primary-100);
+}
 
 .container{
     display: flex;
@@ -93,6 +105,7 @@ body{
 .illustration{
     border: solid 2px var(--clr-accent);
     height: 5rem;
+    width: 10rem;
     border-radius: 1rem;
 }
 
@@ -102,17 +115,32 @@ body{
 }
 
 .italics{
-
+font-style: italic;
 }
 
 button{
     padding: 7px 9px;
-    border-radius: 1rem;
+    border-radius: 7px;
+    width: 6rem;  
 }
 
-*{
-    background-color: inherit;
-    color: inherit;
-    text-decoration: none;
-    border-color: var(--clr-primary-100);
+button.one{
+    border: none;
+    margin-top: 3px;
+}
+
+button.signup{
+    border-style: solid;
+    border-color: white;
+    outline: none;
+}
+
+.justify{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-center{
+    text-align: center;
 }
