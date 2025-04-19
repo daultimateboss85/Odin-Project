@@ -136,11 +136,17 @@ button.signup{
 }
 
 .justify{
-    justify-content: center;
+    justify-content: center;   
+}
+
+.align-items{
     align-items: center;
-    
 }
 
 .text-center{
     text-align: center;
+}
+
+.gap-small{
+    gap: 1rem;
 }
